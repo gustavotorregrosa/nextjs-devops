@@ -19,7 +19,7 @@ export default function Home() {
           <p>
             Get started by editing&nbsp;
 
-            Testing GH Actions
+            Testing GH Actions 123
             <code className={styles.code}>src/pages/index.tsx</code>
           </p>
           <div>
