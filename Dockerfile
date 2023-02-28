@@ -6,6 +6,9 @@ COPY . .
 ARG MY_VAR=test_2
 ENV MY_VAR ${MY_VAR}
 
+ARG NEXT_PUBLIC_NAME
+ENV NEXT_PUBLIC_NAME ${NEXT_PUBLIC_NAME}
+
 
 RUN npm install
 RUN npm run build
