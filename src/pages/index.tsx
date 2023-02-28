@@ -76,6 +76,8 @@ export default function Home() {
             </p>
           </a>
 
+          <h2>env: {process.env.NEXT_PUBLIC_NAME}</h2>
+
           <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
