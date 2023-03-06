@@ -4,8 +4,10 @@ services:
     frontend-react:
         build:
             context: ./
-            dockerfile: Dockerfile
+            dockerfile: Dockerfile.local
         container_name: frontend-react
+        volumes:
+            - ./:/home
         ports:
             - "3000:3000"
 

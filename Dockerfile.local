@@ -1,0 +1,14 @@
+FROM node:18.14-alpine
+WORKDIR /home
+
+ARG MY_VAR=test_2
+ENV MY_VAR ${MY_VAR}
+
+ARG NEXT_PUBLIC_NAME
+ENV NEXT_PUBLIC_NAME ${NEXT_PUBLIC_NAME}
+
+COPY ./start.sh /usr/local/bin/start.sh
+RUN chmod +x /usr/local/bin/start.sh
+
+EXPOSE 3000
+ENTRYPOINT ["start.sh"]
